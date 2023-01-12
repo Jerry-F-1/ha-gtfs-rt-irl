@@ -13,10 +13,10 @@ Before starting the installation you will need to install 2 python modules:
 1. Subscribe to the API on the Transport Authority's web page to obtain the API Token/Key which you will need to access the realtime data.  This is free and takes about 15 mins.
 2. Download the static schedule data zip file provided on the same page.  It's called "GTFS info for use in conjunction with GTFS-R API"
 3. Rename the download file as you like e.g. ireland.zip, this name will be part of the configuration in Home Assistant
-4. Create a new direstory in your Home Assistant config folder called "gtfs"
+4. Create a new directory in your Home Assistant config folder called "gtfs"
 5. Upload the schedule data zip file e.g. ireland.zip to the gtfs folder 
 6. Also create a new folder called "custom_components" and inside that folder create a folder called "gtfs-rt-irl"
-7. Download this reporistory as a Zip file and unzip
+7. Download this repository as a Zip file and unzip
 6. Copy the unzipped files to the custom_components/gtfs-rt-irl folder
 7. Configue the sensor in Home Assistant, see below
 8. Restart Home Assistant.   The sensor will begin loading the database with the static data from the zip file and this will take some time depending on your technical set up, maybe hours.
