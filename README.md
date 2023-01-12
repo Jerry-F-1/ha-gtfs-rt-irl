@@ -1,10 +1,14 @@
 # Home Assistant Custom Sensor for GTFS Realtime Ireland
 This project builds on the work of Zacs https://github.com/zacs/ha-gtfs-rt, the existing GTFS Integration in home assistant https://www.home-assistant.io/integrations/gtfs/ and others to provide a custom transport sensor for GTFS realtime in Ireland.  
 This sensor consumes the GTFS realtime feed at "https://gtfsr.transportforireland.ie/v1"
-The sensor also requires a download of the static schedule zip file which the sensor will automatically load into a sqllite database.   
-Further details are at the Irish Transport Authority website https://developer.nationaltransport.ie/api-details#api=gtfsr&operation=gtfsr
+The sensor also requires a download of the static schedule zip file which the sensor will automatically load into a SQLite database.   
+Further details are at the Irish National Transport Authority website https://developer.nationaltransport.ie/api-details#api=gtfsr&operation=gtfsr
 
 # Setup and Installation
+
+Before starting the installation you will need to install 2 python modules:
+* gtfs-realtime-bindings==0.0.7
+* protobuf==3.20.1
 
 1. Subscribe to the API on the Transport Authoirty's web page to obtain the API Token/Key which you will need to access the realtime data.  This is free and takes about 15 mins.
 2. Download the static schedule data zip file provided on the same page.  It's called "GTFS info for use in conjunction with GTFS-R API"
@@ -47,3 +51,10 @@ Add the following configuration to your configuration.yaml file.  This example i
 * __stop_name__ (_Required_): The required Stop. This should be an exact copy of the stop_name field in the stops.txt data file 
 * __route__: (_Required_): The required Route. This should be an exact copy of the route_short_name field in the routes.txt data file
 * __operator__: (_Required_): The required operator. This is the agency_id field in the agency.txt data file
+
+# Please Note
+
+* this sensor implements version 1 of GTFS as provides by the Irish National Transport Authority which provides just one API for trip updates.  A vehicle position API has not been provided thus far.
+* All subscribers have been notified that a new version (V2) will be released in early 2023 which will contain changes that may/will break existing implementations.
+* For version 1 the static schedule data tends to be updated every few months, which means the SQLite database and Zip files should be deleted.  The replacement Zip file should be uploaded and Home Assistant restarted to re-generate the SQLite database.
+* The plans announced are that V2 will contain 3 APIs in total.  A replacement for the existing trip updates API, a new API for vehicle positions and a new API to automate updates to the static schedule data.
