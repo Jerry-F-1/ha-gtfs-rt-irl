@@ -16,6 +16,7 @@ This project builds on the work of Zacs https://github.com/zacs/ha-gtfs-rt, exis
 
 # Configuration
 
+Add the following configuration to your configuration.yaml file.  This example is for 2 bus stops / routes in Dublin.  Each one uses a different operator, i.e. Dublin Bus and Go Ahead
 
 ```sensor:
   - platform: gtfs-rt-irl
