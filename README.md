@@ -4,8 +4,14 @@ This project builds on the work of Zacs https://github.com/zacs/ha-gtfs-rt and t
 # Setup and Installation
 
 1. Subscribe to the API on the Transport Authoirty's web page to obtain the API Token/Key which you will need to access the realtime data.  This is free and takes about 15 mins.
-2. Download the static schedule data provided on the same page.  It's called "GTFS info for use in conjunction with GTFS-R API"
-3. Rename the download file as you like e.g. ireland.zip
+2. Download the static schedule data zip file provided on the same page.  It's called "GTFS info for use in conjunction with GTFS-R API"
+3. Rename the download file as you like e.g. ireland.zip, this name will be part of the configuration in Home Assistant
 4. Create a new direstory in your Home Assistant config folder called "gtfs"
 5. Upload the schedule data zip file e.g. ireland.zip to the gtfs folder 
-5. Also create a new folder called "custom_omponents" and inside that folder create a folder called "gtfs-rt-irl"
+6. Also create a new folder called "custom_omponents" and inside that folder create a folder called "gtfs-rt-irl"
+7. Download this reporistory as a Zip file and unzip
+6. Copy the unzipped files to the custom_components/gtfs-rt-irl folder
+7. Configue the sensor in Home Assistant, see below
+8. Restart Home Assistant.   The sensor will begin loading the database with the static data from the zip file and this will take some time depending on your technical set up, maybe hours.
+
+# Configuration
