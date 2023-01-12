@@ -10,7 +10,7 @@ Before starting the installation you will need to install 2 python modules:
 * gtfs-realtime-bindings==0.0.7
 * protobuf==3.20.1
 
-1. Subscribe to the API on the Transport Authoirty's web page to obtain the API Token/Key which you will need to access the realtime data.  This is free and takes about 15 mins.
+1. Subscribe to the API on the Transport Authority's web page to obtain the API Token/Key which you will need to access the realtime data.  This is free and takes about 15 mins.
 2. Download the static schedule data zip file provided on the same page.  It's called "GTFS info for use in conjunction with GTFS-R API"
 3. Rename the download file as you like e.g. ireland.zip, this name will be part of the configuration in Home Assistant
 4. Create a new direstory in your Home Assistant config folder called "gtfs"
