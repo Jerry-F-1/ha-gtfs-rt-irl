@@ -56,11 +56,11 @@ Add the following configuration to your configuration.yaml file.  This example i
 
 The sensor implementation provides some extra state attributes as follows:
 
-* __Stop ID__  The stop Id as opposed to the name, useful for verifying the configuration 
-* __Route__   The route ID, useful for verifying the configuration
-* __Next arrival__  the next arrival at the stop in minutes.  Can be used to set up a separate sensor
-* __Arrivals__  The number of arrivals found for this stop/route/operator within the overall limit set.
-* __Departure time__  E.g. 17:00.  Sometimes if a vehicle is ahead of schedule, the state of the sensor can be negative, which is not much use.  
+* __Stop ID__:  The stop ID as opposed to the name, useful for verifying the configuration 
+* __Route__:   The route ID, useful for verifying the configuration
+* __Next arrival__:  The next arrival at the stop in minutes.  Can be used to set up a separate sensor
+* __Arrivals__:  The number of arrivals found for this stop/route/operator within the overall limit set.
+* __Departure time__:  E.g. 17:00.  If a vehicle is ahead of schedule, the state of the sensor can be negative, which is not much use.  
 
 # Please Note
 
