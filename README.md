@@ -1,6 +1,6 @@
 # Home Assistant Custom Sensor for GTFS Realtime Ireland
-This project builds on the work of Zacs https://github.com/zacs/ha-gtfs-rt, existing GTFS Integration in home assistant https://www.home-assistant.io/integrations/gtfs/ and others to provide a custom transport sensor for GTFS realtime in Ireland.  
-This sensor consumes the GTFS realtime feed at https://developers.google.com/transit/gtfs-realtime/guides/trip-updates. 
+This project builds on the work of Zacs https://github.com/zacs/ha-gtfs-rt, the existing GTFS Integration in home assistant https://www.home-assistant.io/integrations/gtfs/ and others to provide a custom transport sensor for GTFS realtime in Ireland.  
+This sensor consumes the GTFS realtime feed at "https://gtfsr.transportforireland.ie/v1"
 The sensor also requires a download of the static schedule zip file which the sensor will automatically load into a sqllite database.   
 Further details are at the Irish Transport Authority website https://developer.nationaltransport.ie/api-details#api=gtfsr&operation=gtfsr
 
