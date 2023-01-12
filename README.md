@@ -36,11 +36,11 @@ Add the following configuration to your configuration.yaml file.  This example i
        
 # Configuration Variables:
 
-trip_update_url (Required): The production realtime feed URL as provided by the transport authority
-api_key (Required): Provided by the transport authority when you subscribe
-schedule_zip_file (Required): The name of the zip file in the gtfs folder containing the static schedule data
-arrivals_limit (Optional default=30):  The number of arrivals found to be returned, across all the stops required
-depratures(Required): The list of route / stop / operator combinations of interest.  At least 1 must be specified
-stop_name (Required): The required stop. This should be an exact copy of the stop_name field in the stops.txt data file 
-route: (Required): this should be an exact copy of the route_short_name field in the routes.txt text
-operator: the agency_id field in the agency.txt data file
+* trip_update_url (Required): The production realtime feed URL as provided by the transport authority.
+* api_key (Required): Provided by the transport authority when you subscribe.
+* schedule_zip_file (Required): The name of the zip file in the gtfs folder containing the static schedule data.
+* arrivals_limit (Optional default=30):  The number of arrivals found to be returned, across all the stops required.
+* depratures(Required): The list of route / stop / operator combinations of interest.  At least 1 must be specified.
+* stop_name (Required): The required stop. This should be an exact copy of the stop_name field in the stops.txt data file 
+* route: (Required): this should be an exact copy of the route_short_name field in the routes.txt data file
+* operator: the agency_id field in the agency.txt data file
