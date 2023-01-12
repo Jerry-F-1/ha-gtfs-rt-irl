@@ -43,7 +43,7 @@ Add the following configuration to your configuration.yaml file.  This example i
 * __api_key__ (_Required_): Provided by the transport authority when you subscribe.
 * __schedule_zip_file__ (_Required_): The name of the zip file in the gtfs folder containing the static schedule data.
 * __arrivals_limit__ (_Optional default=30_):  The number of arrivals found to be returned, across all the stops required.
-* __depratures__(_Required_): The list of route / stop / operator combinations of interest.  At least 1 must be specified.
-* __stop_name__ (_Required_): The required stop. This should be an exact copy of the stop_name field in the stops.txt data file 
-* __route__: (_Required_): this should be an exact copy of the route_short_name field in the routes.txt data file
-* __operator__: (_Required_)the agency_id field in the agency.txt data file
+* __departures__(_Required_): The list of route / stop / operator combinations of interest.  At least 1 must be specified.
+* __stop_name__ (_Required_): The required Stop. This should be an exact copy of the stop_name field in the stops.txt data file 
+* __route__: (_Required_): The required Route. This should be an exact copy of the route_short_name field in the routes.txt data file
+* __operator__: (_Required_): The required operator. This is the agency_id field in the agency.txt data file
