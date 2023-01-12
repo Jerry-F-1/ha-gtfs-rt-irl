@@ -34,11 +34,11 @@ Add the following configuration to your configuration.yaml file.  This example i
     departures:
       - stop_name: "St Enda's Park, stop 2992"
         route: "16"
-        operator: '978'
+        operator: "978"
 
       - stop_name: "Eden Avenue, stop 2967"
         route: "175"
-        operator: '03'
+        operator: "03"
 ```        
        
 # Configuration Variables:
