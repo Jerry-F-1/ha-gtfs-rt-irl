@@ -44,7 +44,7 @@ CONF_VEHICLE_POSITION_URL = "vehicle_position_url"
 CONF_ZIP_FILE = "schedule_zip_file"
 CONF_LIMIT = "arrivals_limit"
 
-DEFAULT_NAME = "gtfs_rt_irl"
+DEFAULT_NAME = "gtfs-rt-irl"
 DEFAULT_PATH = "gtfs"
 ICON = "mdi:bus"
 
