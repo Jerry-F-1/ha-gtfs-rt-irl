@@ -412,9 +412,9 @@ class PublicTransportData:
             departure_times[route_no][stop_name].append(details)
 
         # Sort by arrival time
-        for route in departure_times:
-            for stop in departure_times[route]:
-                departure_times[route][stop].sort(key=lambda t: t.arrival_time)
+        for route_no in departure_times:
+            for stop_name in departure_times[route_no]:
+                departure_times[route_no][stop_name].sort(key=lambda t: t.arrival_time)
 
         self.info = departure_times
 
