@@ -2,7 +2,8 @@
 
 IMPORTANT NOTICE    
 A new version (version 2) of the GTFS API went live in March 2023 so this version has now been retired.  If you are interested, please install the new version instead.
-https://github.com/Jerry-F-1/GTFS-Irl-V2-Home-Assistant.git
+* You can fine version 2 at:  https://github.com/Jerry-F-1/GTFS-Irl-V2-Home-Assistant.git
+* Once the change over period expires, this repository for version 1 will be deleted.
 
 This project builds on the work of Zacs https://github.com/zacs/ha-gtfs-rt, the existing GTFS Integration in home assistant https://www.home-assistant.io/integrations/gtfs/ and others to provide a custom transport sensor for GTFS realtime in Ireland.  
 This sensor consumes the GTFS realtime feed at "https://gtfsr.transportforireland.ie/v1"
